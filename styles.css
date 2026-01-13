@@ -1,0 +1,35 @@
+.rutgers-course {
+    background-color: #ffe082;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .rutgers-course:hover {
+    background-color: #ffd54f;
+  }
+  
+  #rutgers-tooltip {
+    position: absolute;
+    padding: 10px 12px;
+    background: #ffffff;
+    border: 1px solid #cc0033;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 300px;
+    z-index: 2147483647;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    line-height: 1.4;
+  }
+  
+  #rutgers-tooltip a {
+    display: inline-block;
+    margin-top: 2px;
+  }
+  
+  #rutgers-tooltip a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Rutgers Course Hover",
+  "version": "1.0",
+  "description": "Hover over 01:198:211 to see Rutgers course info",
+  
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://classes.rutgers.edu/*"],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
